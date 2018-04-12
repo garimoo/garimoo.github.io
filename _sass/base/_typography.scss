@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/earlyaccess/nanumgothiccoding.css);
+
 
 body {
   @include font-feature-settings("kern", "liga", "pnum");
@@ -84,12 +84,12 @@ code {
 pre,
     code {
         border: 1px solid $grey-color-light;
-        font-family: 'Nanum Gothic Coding';
+        font-family: 'Nanum Gothic Coding' !important;
     }
 
     code {
         padding: 1px 3px;
-        background-color: #FFF;
+        background-color: #FFF !important;
         border-radius: 5px;
     }
 
