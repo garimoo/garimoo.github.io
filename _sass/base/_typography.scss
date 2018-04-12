@@ -1,3 +1,5 @@
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothiccoding.css);
+
 body {
   @include font-feature-settings("kern", "liga", "pnum");
   -webkit-font-smoothing: antialiased;
@@ -73,7 +75,48 @@ picture {
   margin: 0;
   max-width: 100%;
 }
-
+/*
 code {
 
-}
+}*/
+
+/*****************추가*****************/
+pre,
+    code {
+        border: 1px solid $grey-color-light;
+        font-family: 'Nanum Gothic Coding';
+    }
+
+    code {
+        padding: 1px 3px;
+        background-color: #FFF;
+        border-radius: 5px;
+    }
+
+    pre {
+        border-radius: 3px;
+        padding: 8px 12px;
+        overflow-x: scroll;
+        background-color: #F5F5F5;
+
+        > code {
+            background-color: #F5F5F5;
+            border: 0;
+            padding-right: 0;
+            padding-left: 0;
+        }
+    }
+
+blockquote {
+        color: #BBB;
+        border-left: 4px solid $brand-color;
+        padding-left: $spacing-unit / 2;
+        font-size: 17px;
+        letter-spacing: -1px;
+        font-style: italic;
+
+        > :last-child {
+            margin-bottom: 0;
+        }
+    }
+    /*************추가*************/
