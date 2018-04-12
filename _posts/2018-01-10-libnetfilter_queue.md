@@ -8,20 +8,19 @@ categories: Study
 <br/>
 ## libnetlink project, libnetfilter_queue 다운로드
 
-```
+{% highlight%}
 sudo wget http://www.netfilter.org/projects/libnfnetlink/files/libnfnetlink-1.0.1.tar.bz2
-```
+{% endhighlight %}
 
 명령어로 패키지 다운로드 (최신 버전이 나왔을 수 있으니 http://www.netfilter.org/projects/libnfnetlink/downloads.html 여기서 확인)
 
-```
+{% highlight%}
 tar -xvf libnfnetlink-1.0.1.tar.bz2
 cd libnfnetlink-1.0.0/
 ./configure
 make
 sudo make install
-
-```
+{% endhighlight %}
 
 다운로드가 끝났으면 http://www.netfilter.org/projects/libnetfilter_queue/downloads.html 에서 libnetfilter_queue 같은 방식으로 다운로드.
 
@@ -35,10 +34,8 @@ http://www.netfilter.org/projects/libnetfilter_queue/doxygen/group__Queue.html
 
 여기서 코드에 대한 설명을 볼 수 있다.
 
-```c
-
+{% highlight c %}
 //nfqnl_test.c
-
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -223,7 +220,7 @@ int main(int argc, char **argv)
 
 	exit(0);
 }
-```
+{% endhighlight %}
 
 코드 컴파일 방법은 다음과 같다.
 
@@ -244,7 +241,7 @@ int main(int argc, char **argv)
 
 **첫번째 쉘**
 
-```
+{% highlight%}
 1. sudo iptables -A OUTPUT -p icmp -j NFQUEUE --queue-num 0
 
 # this create a queue and rediect icmp to this queue
@@ -252,12 +249,12 @@ int main(int argc, char **argv)
 2. ping www.cceye.com
 
 # this create icmp traffic , note at this stage, all ICMP traffic are blocked, since no queue consumer process.
-```
+{% endhighlight %}
 
 **두번째 쉘**
 
-```
+{% highlight%}
 3. let the ping continue run, and in new shell, run nfqnl_test,
 
 sudo ./test
-```
+{% endhighlight %}
