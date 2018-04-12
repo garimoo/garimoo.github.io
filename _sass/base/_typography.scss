@@ -81,6 +81,10 @@ code {
     font-size: $base-font-size;
 }
 
+.hljs{
+  font-family: 'Nanum Gothic Coding' !important;
+  font-size: $base-font-size;
+}
 /*****************추가*****************
 pre,
     code {
@@ -107,11 +111,13 @@ pre,
             padding-left: 0;
         }
     }
-  blockquote:before {
-      content: "\201C";
-      font-size: 3em;
-      color: #bcbcbc;
-      float: left;
-      margin: -5px 10px 0px -10px;
-    }
+
     ************추가*************/
+
+    blockquote:before {
+        content: "\201C";
+        font-size: 3em;
+        color: #bcbcbc;
+        float: left;
+        margin: -5px 10px 0px -10px;
+      }
