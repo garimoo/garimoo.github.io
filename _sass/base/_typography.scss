@@ -106,17 +106,11 @@ pre,
             padding-left: 0;
         }
     }
-
-blockquote {
-        color: #BBB;
-        border-left: 4px solid $brand-color;
-        padding-left: $spacing-unit / 2;
-        font-size: 17px;
-        letter-spacing: -1px;
-        font-style: italic;
-
-        > :last-child {
-            margin-bottom: 0;
-        }
+  blockquote:before {
+      content: "\201C";
+      font-size: 3em;
+      color: #bcbcbc;
+      float: left;
+      margin: -5px 10px 0px -10px;
     }
     /*************추가*************/
