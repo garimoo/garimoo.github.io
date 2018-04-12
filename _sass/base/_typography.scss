@@ -75,10 +75,11 @@ picture {
   margin: 0;
   max-width: 100%;
 }
-/*
-code {
 
-}*/
+code {
+    font-family: 'Nanum Gothic Coding' !important;
+    font-size: $base-font-size;
+}
 
 /*****************추가*****************
 pre,
