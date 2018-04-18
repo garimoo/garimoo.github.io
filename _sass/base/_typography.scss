@@ -78,12 +78,16 @@ picture {
 }
 
 code {
-    font-family: 'Source Code Pro', 'Nanum Gothic Coding', monospace;
+    font-family: 'Source Code Pro',"KoPub Dotum", monospace;
     font-size: $base-font-size;
 }
 
 .hljs{
-  font-family: 'Source Code Pro', 'Nanum Gothic Coding', monospace;
+  font-family: 'Source Code Pro',"KoPub Dotum", monospace;
+}
+
+.hljs-deletion {
+    background: none;
 }
 /*****************추가*****************
 pre,
