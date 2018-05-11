@@ -54,3 +54,14 @@ for details.
 ```
 설치중 위와 같은 에러가 나오고 진행이 안되는 상황이 발생.
 (http://silentcargo.tistory.com/41)를 보고 해결했다!
+
+## 문제점 4) netca : command not found
+오라클 엔진 설치 후 netca를 실행해줘야 하는데, 쉘에서 인식을 못할 때
+
+```
+$ export ORACLE_HOME=/u01/app/oracle/product/11.2.0/dbhome_1
+$ export PATH=$ORACLE_HOME/bin:$PATH
+$ netca
+```
+
+이렇게 변수 설정해주면 됨!
