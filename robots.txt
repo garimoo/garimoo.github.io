@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: http://garimoo.github.io/sitemap.xml
