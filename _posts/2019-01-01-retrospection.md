@@ -3,7 +3,7 @@ layout: post
 title:  "2018년 회고"
 date:   2019-01-01 18:46:00
 author: garimoo
-categories: diary
+categories: Diary
 ---
 
 
