@@ -62,13 +62,14 @@ categories: Study
 
 ### 인덱스 컬럼의 가공
 #### 컬럼 가공 사례
+
 | 컬럼 가공 | 튜닝 방안 |
 | --- | --- |
 | where substr(업체명,1,2) = '대한' | where 업체명 like '대한%' |
 | where 월급여 * 12 = 360000 | where 월급여 = 360000/12 |
 | where to_char(일시,'yyyymmdd') = :dt  | where 일시 >= to_date(:'dt, 'yyyymmdd') <br/> and 일시 < to_date (:dt, 'yyyymmdd') + 1 |
-| where 연령 \|\| 직업 = '30공무원' | where 연령 = 30 and 직업 = '공무원' |
-| where 회원번호 \|\| 지점번호 =: str | where 회원번호 = substr(:str,1,2)<br/>and 지점번호 = substr(:str,3,4) |
+| `where 연령 || 직업 = '30공무원'` | where 연령 = 30 and 직업 = '공무원' |
+| `where 회원번호 || 지점번호 =: str` | where 회원번호 = substr(:str,1,2)<br/>and 지점번호 = substr(:str,3,4) |
 
 #### 튜닝 사례
 - 인덱스 구성
@@ -160,6 +161,7 @@ WHERE 연봉 between 2000 and 4000;
     - 모든 데이터가 메모리에 캐싱돼 있더라도 매번 DBA를 해싱하고 래치 획득 과정을 반복해야 하기 때문. buffer lock도 고려.
 ### 인덱스 클러스터링 팩터
 - 같은 값을 갖는 데이터가 모여 있는 정도를 의미.
+
 ``` sql
 -- object_id로 정렬하면서 테이블 생성
 create table t
