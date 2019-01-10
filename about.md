@@ -8,6 +8,6 @@ permalink: /about/
 
 * Author: Garim Kim
 * Github: [http://github.com/garimoo](http://github.com/garimoo)
-* Instagram : [@luv.rimu](https://www.instagram.com/luv.rimu/?hl=ko)
-* [NHN엔터테인먼트](https://www.nhnent.com/ko/index.nhn) 토스트 루키5기
-* DBA 꿈나무
+* Instagram : [@colormenow__](https://www.instagram.com/colormenow__/?hl=ko)
+* [NHN엔터테인먼트](https://www.nhnent.com/ko/index.nhn) 데이터운영팀
+* DBA
