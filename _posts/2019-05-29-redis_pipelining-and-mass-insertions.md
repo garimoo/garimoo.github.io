@@ -27,4 +27,5 @@ $  echo -e "$(cat redis_dummy.txt)" | /home1/cubrid1/redis-5.0.3/src/redis-cli -
 (integer) 364
 ```
 - DBSIZE 명령어를 통해 데이터가 잘 들어갔는지 확인할 수 있음.
-## 출처 http://intro2libsys.info/introduction-to-redis/pipelining-and-mass-insertions
+## 출처
+- http://intro2libsys.info/introduction-to-redis/pipelining-and-mass-insertions
