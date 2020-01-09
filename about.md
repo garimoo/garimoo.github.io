@@ -7,7 +7,6 @@ permalink: /about/
 <!--<img src="{{ site.baseurl }}/assets/profile-placeholder.gif" title="Profile Picture" class="profile">-->
 
 * Author: Garim Kim
-* Github: [http://github.com/garimoo](http://github.com/garimoo)
-* Instagram : [@colormenow__](https://www.instagram.com/colormenow__/?hl=ko)
+* Medium: https://medium.com/garimoo
 * [NHN엔터테인먼트](https://www.nhnent.com/ko/index.nhn) 데이터운영팀
 * DBA

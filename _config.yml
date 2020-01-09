@@ -9,12 +9,12 @@ exclude:
   - "/vendor/"
 
 # Site settings
-title: COLOR ME
-subtitle: "work hard and play harder"
+title: MOVED TO MEDIUM
+subtitle: "https://medium.com/garimoo"
 email: kgarim95@gmail.com
 name: Garkim Kim
 description: >
-  Work hard and play harder
+  moved to medium
 # Base URL of site (i.e. /blog). It should always start with a slash,
 # and never end with a slash. Set it to a blank value if hosting at the
 # root of your server.
